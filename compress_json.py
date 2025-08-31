@@ -5,7 +5,7 @@ from pyairtable import Table
 
 # Airtable setup
 AIRTABLE_API_KEY = os.getenv("AIRTABLE_API_KEY")   # set in environment
-BASE_ID = "appXXXXXXXXXXXXXX"                      # <-- replace with your Base ID
+BASE_ID = "appEryE1iXzG6VZWM"
 APPLICANTS_TABLE = "Applicants"
 PERSONAL_TABLE = "Personal Details"
 WORK_TABLE = "Work Experience"
@@ -90,3 +90,4 @@ def compress_applicant(applicant_id):
 if __name__ == "__main__":
     for row in applicants.all():
         compress_applicant(row["id"])
+
